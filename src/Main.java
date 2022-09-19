@@ -7,6 +7,10 @@ public class Main {
     public static void main(String[] args)
     {
         System.out.println("Kenneth change");
+
+        //Nicklas horrorStory
+        System.out.println("Han vendte sig om og så ind i mørket, øjnene var der stadig, men denne gang også en mund");
+
         boolean running = true;
         String current;
 
