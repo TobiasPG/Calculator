@@ -16,7 +16,7 @@ public class Main {
 
         JOptionPane.showMessageDialog(null, "How to use: \nInput you calculation without spaces\nAlways Include *, fx no (2)2, use instead (2)*2\nwrite 'exit' to end program", "Calculator.exe", JOptionPane.PLAIN_MESSAGE);
 
-//tissemand fra Mikkel J
+//checkcheck mikkelj
         letters.add("a");
         letters.add("b");
         letters.add("c");
