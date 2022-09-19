@@ -1,6 +1,6 @@
-
 import java.util.*;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static ArrayList<String> letters = new ArrayList<>();
@@ -8,13 +8,8 @@ public class Main {
     {
         boolean running = true;
         String current;
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println();
-        System.out.println("How to use:");
-        System.out.println("Input you calculation without spaces");
-        System.out.println("Always Include *, fx no ax, use instead a*x");
-        System.out.println("write 'exit' to end program");
+        JOptionPane.showMessageDialog(null, "How to use: \nInput you calculation without spaces\nAlways Include *, fx no (2)2, use instead (2)*2\nwrite 'exit' to end program", "Calculator.exe", JOptionPane.PLAIN_MESSAGE);
 
 
         letters.add("a");
@@ -45,11 +40,12 @@ public class Main {
 
         while(running){
 
-            current = scanner.nextLine();
+            current = JOptionPane.showInputDialog(null, "Enter Calculation:", "Calculator.exe", JOptionPane.PLAIN_MESSAGE);
+
             if(current.equals("exit"))   //Input for exit Program
             {
-                System.out.println();
-                System.out.println("Stopping Program...");
+                JOptionPane.showMessageDialog(null, "Thank you for using this calculator:", "Calculator.exe", JOptionPane.PLAIN_MESSAGE);
+
                 running = false;
             }
             else
@@ -134,10 +130,8 @@ public class Main {
                     subtraction(line);
                 }
 
-                System.out.println(line);
-                System.out.println();
 
-
+                JOptionPane.showMessageDialog(null, current + "\n=  " + line.get(0), "Calculator.exe", JOptionPane.PLAIN_MESSAGE);
 
 
             }
