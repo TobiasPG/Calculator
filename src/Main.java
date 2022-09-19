@@ -6,6 +6,7 @@ public class Main {
     public static ArrayList<String> letters = new ArrayList<>();
     public static void main(String[] args)
     {
+        System.out.println("Kenneth change");
         boolean running = true;
         String current;
 
